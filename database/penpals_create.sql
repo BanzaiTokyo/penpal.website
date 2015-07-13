@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2015-07-13 13:45:45.392
+-- Last modification date: 2015-07-13 13:49:35.342
 
 
 
@@ -7,7 +7,7 @@
 -- tables
 -- Table bans
 CREATE TABLE bans (
-    id_ban int    NOT NULL ,
+    id_ban int    NOT NULL  AUTO_INCREMENT,
     ip varchar(45)    NOT NULL ,
     userid int    NOT NULL ,
     CONSTRAINT bans_pk PRIMARY KEY (id_ban)
@@ -108,7 +108,7 @@ CREATE TABLE pictures (
 
 -- Table preferences
 CREATE TABLE preferences (
-    id_preference int    NOT NULL ,
+    id_preference int    NOT NULL  AUTO_INCREMENT,
     p_gender int    NULL ,
     p_agemin int    NULL ,
     p_agemax int    NULL ,
