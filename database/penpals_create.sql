@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2015-07-13 09:30:33.661
+-- Last modification date: 2015-07-13 13:45:45.392
 
 
 
@@ -121,7 +121,7 @@ CREATE TABLE views (
     id_view int    NOT NULL  AUTO_INCREMENT,
     member_id int    NOT NULL ,
     profile_id int    NOT NULL ,
-    vtime datetime    NULL ,
+    vtime datetime    NOT NULL ,
     CONSTRAINT views_pk PRIMARY KEY (id_view)
 );
 
