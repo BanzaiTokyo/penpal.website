@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2015-07-13 13:49:35.342
+-- Last modification date: 2015-07-14 13:34:12.618
 
 
 
@@ -65,7 +65,7 @@ CREATE TABLE members (
     uname varchar(20)    NOT NULL ,
     fname varchar(30)    NULL ,
     lname varchar(16)    NULL ,
-    password varchar(16)    NOT NULL ,
+    pwd varchar(16)    NOT NULL ,
     birthday date    NULL ,
     gender int    NULL ,
     email varchar(50)    NOT NULL ,
@@ -80,7 +80,7 @@ CREATE TABLE members (
     points int    NOT NULL DEFAULT 0 ,
     profilepic varchar(50)    NULL ,
     about text    NULL ,
-    regdate date    NOT NULL ,
+    regdate datetime    NOT NULL ,
     CONSTRAINT members_pk PRIMARY KEY (id_member)
 );
 
