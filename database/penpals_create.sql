@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2015-07-14 13:34:12.618
+-- Last modification date: 2015-07-14 13:59:18.293
 
 
 
@@ -16,7 +16,7 @@ CREATE TABLE bans (
 -- Table countries
 CREATE TABLE countries (
     id_country varchar(3)    NOT NULL ,
-    cname varchar(30)    NOT NULL ,
+    cname varchar(50)    NOT NULL ,
     numcode int    NOT NULL ,
     CONSTRAINT countries_pk PRIMARY KEY (id_country)
 );
@@ -71,8 +71,8 @@ CREATE TABLE members (
     email varchar(50)    NOT NULL ,
     referredby int    NULL ,
     address_visibility int    NULL ,
-    street1 varchar(30)    NULL ,
-    street2 varchar(30)    NULL ,
+    street1 varchar(40)    NULL ,
+    street2 varchar(40)    NULL ,
     zipcode varchar(20)    NULL ,
     city varchar(30)    NULL ,
     country varchar(3)    NULL ,
