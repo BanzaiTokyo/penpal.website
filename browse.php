@@ -16,7 +16,7 @@
     
     <title>
 
-        Penpal.Website
+        <?php echo $websiteName?>
 
     </title>
 
@@ -66,7 +66,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="./" class="navbar-brand">Penpal.Website</a>
+            <a href="./" class="navbar-brand"><?php echo $websiteName?></a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
@@ -344,7 +344,7 @@ echo $pagedtable;
 
 
         <ul class="bs-docs-footer-links muted">
-            <li>Penpal.Website</li>
+            <li><?php echo $websiteName?></li>
             <li>&middot;</li>
             <li class="active">
                 <a href="#">Home</a>

@@ -1,6 +1,8 @@
 <?php
 $titreSite = "Penpal.Website - Meet friends from all over the world";
 
+$websiteName = "Penpal.Website";
+
 // Nom ou adresse ip du serveur
 $host = "localhost";
 		
