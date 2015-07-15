@@ -6,11 +6,11 @@
  * Time: 11:46
  */
 
-$getcountriesexceptunwanted    = "SELECT p.country, c.name as name, count(p.id) as schet
-FROM penpalsf_site.pro_membersu  as p left join countries as c on p.country=c.code
-where status <> 20
+$getcountriesexceptunwanted    = "SELECT m.country, c.cname as name, count(m.id_member) as totalmembers
+FROM members  as m left join countries as c on m.country=c.id_country
+where level >= 3
 group by country
-order by schet desc
+order by totalmembers desc
 limit 6;";
 $topcountries 		= 	mysql_query($getcountriesexceptunwanted) or die("pb sur requete ".$getcountriesexceptunwanted);
 
@@ -20,7 +20,7 @@ while ($donnees = mysql_fetch_array ($topcountries))
 {
     $country = $donnees['country'];
     $countryname = $donnees['name'];
-    $count = $donnees['schet'];
+    $count = $donnees['totalmembers'];
     $countrytable		= $countrytable.'
 
             <a href="browse.php?country='.$country.'">

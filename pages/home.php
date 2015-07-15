@@ -19,7 +19,7 @@
             <nav class="col-xs-12 minuspadding">
                 <ul class="pager">
                     <li class="previous disabled"><a href="#">&larr; Newer</a></li>
-                    <li class="next"><a href="#">Older &rarr;</a></li>
+                    <li class="next"><a href="./browse.php">Older &rarr;</a></li>
                 </ul>
             </nav>
 

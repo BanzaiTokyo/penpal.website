@@ -8,12 +8,10 @@ else
 //Préparation du menu dynamique
 //-----------------------------
 //-> On sélectionne toutes les pages de la table sitepages
-$requete    = "  SELECT regdate, id, fname, lname, city, pic1, country
-                FROM penpalsf_site.pro_membersu
-                where pic1 is not null
-                  and pic1 <> ''
-                  and status <> 20
-                  and country like '".strtoupper($selectedCountry)."%'
+$requete    = "  SELECT regdate, id_member, fname, lname, city, profilepic, country
+                FROM members
+                where profilepic is not null
+                and country like '".strtoupper($selectedCountry)."%'
                 ORDER BY regdate DESC
                 limit 18";
 $req 		= 	mysql_query($requete) or die("pb sur requete ".$requete);
@@ -24,9 +22,9 @@ while ($donnees = mysql_fetch_array ($req))
 {
     $username 		= $donnees['fname']." ".$donnees['lname'];
     $city 	= $donnees['city'];
-    $id = $donnees['id'];
+    $id = $donnees['id_member'];
 	$country = $donnees['country'];
-    $photo = "<img src=./members/uploads/".$donnees['pic1'].">";
+    $photo = "<img src=./members/uploads/".$donnees['profilepic'].">";
 
     $browsetable		= $browsetable.'
     <a href="profile.php?id='.$id.'">

@@ -66,7 +66,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://penpalsfinder.com" class="navbar-brand">PenpalsFinder.com</a>
+            <a href="./" class="navbar-brand">Penpal.Website</a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
@@ -110,7 +110,7 @@
 
 
         <ul class="bs-docs-footer-links muted">
-            <li>PenpalsFinder</li>
+            <li>Penpal.Website</li>
             <li>&middot;</li>
             <li class="active">
                 <a href="#">Home</a>

@@ -11,21 +11,21 @@ mysql_connect($host,$user,$pass) or die ("erreur de connexion au serveur");
 mysql_select_db($bdd) or die ("erreur de connexion à la base de données");
 
 //Requete SQL pour récupérer des informations dans la BDD
-$query 	 		= 'select fname, lname, birthday, gender, country, city, descr, pic1 from pro_membersu where id='.$id;
-$result  		= mysql_query($query) or die("problème (huj) dans la requete : ".$query);
+$query 	 		= 'select fname, lname, birthday, gender, country, city, about, profilepic from members where id_member='.$id;
+$result  		= mysql_query($query) or die("problème dans la requete : ".$query);
 $row 	 		= mysql_fetch_array($result);
 $fname		= $row['fname'];
 $lname		= $row['lname'];
-$descr = $row['descr'];
+$descr = $row['about'];
 $gender		= $row['gender'];
 $birthday   = $row['birthday'];
 $code = $row['country'];
 $city       = $row['city'];
-$picture    = $row['pic1'];
+$picture    = $row['profilepic'];
 
-$query 	 		= 'select name from countries where code = "'.$code.'"';
-$result  		= mysql_query($query) or die("problème (huj) dans la requete : ".$query);
+$query 	 		= 'select cname from countries where id_country = "'.$code.'"';
+$result  		= mysql_query($query) or die("problème dans la requete : ".$query);
 $row 	 		= mysql_fetch_array($result);
-$country=$row['name'];
+$country=$row['cname'];
 ?>
 

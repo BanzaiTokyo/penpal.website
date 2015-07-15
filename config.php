@@ -1,12 +1,12 @@
 <?php
-$titreSite = "PenpalsFinder - Meet friends from all over the world";
+$titreSite = "Penpal.Website - Meet friends from all over the world";
 
 // Nom ou adresse ip du serveur
 $host = "localhost";
 		
 // Identifiants de connexion
-$user = 'penpaluser';
-$pass = 'yu=9S$GNN_vA';
+$user = 'root';
+$pass = 'root';
 	
 // Nom des bases de données
 $bdd = "penpaldev";

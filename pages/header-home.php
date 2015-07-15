@@ -14,7 +14,7 @@
             </div>
 
             <div class="col-md-6 ">
-                <h1>PenpalsFinder</h1>
+                <h1>Penpal.Website</h1>
 
                 <h2>Find penpals from all over the world to learn languages, talk about different cultures and become
                     real friends.<br>
