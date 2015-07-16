@@ -12,7 +12,7 @@
 		mysql_select_db($bdd) or die ("erreur de connexion à la base de données");
 
  		//Requete SQL pour récupérer des informations dans la BDD
-		$query 	 		= "select pagename, title, description, keywords from sitepages where id=".$Idpage;
+		$query 	 		= "select pagename, title, description, keywords from sitepages where id_page=".$Idpage;
 		$result  		= mysql_query($query) or die("problème dans la requete : ".$query);
 		$row 	 		= mysql_fetch_row($result);
 		$pagename		= $row[0];
@@ -30,7 +30,7 @@
 	$menu="";
 	while ($donnees = mysql_fetch_array ($req))
 			{
-				$lien 		= $donnees['id'];
+				$lien 		= $donnees['id_page'];
 				$titrelien 	= $donnees['title'];
                 if ($lien != $Idpage)
                 {

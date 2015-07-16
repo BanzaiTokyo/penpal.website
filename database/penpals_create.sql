@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2015-07-14 13:59:18.293
+-- Last modification date: 2015-07-16 16:59:29.668
 
 
 
@@ -114,6 +114,17 @@ CREATE TABLE preferences (
     p_agemax int    NULL ,
     p_mail int    NOT NULL DEFAULT 0 ,
     CONSTRAINT preferences_pk PRIMARY KEY (id_preference)
+);
+
+-- Table sitepages
+CREATE TABLE sitepages (
+    id_page int    NOT NULL ,
+    title varchar(45)    NOT NULL ,
+    description varchar(255)    NOT NULL ,
+    keywords varchar(255)    NOT NULL ,
+    pagename varchar(45)    NOT NULL ,
+    ordr int    NOT NULL ,
+    CONSTRAINT sitepages_pk PRIMARY KEY (id_page)
 );
 
 -- Table views

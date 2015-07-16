@@ -7,9 +7,6 @@
  */
 
 
-//Préparation du menu dynamique
-//-----------------------------
-//-> On sélectionne toutes les pages de la table sitepages
 $requete    = "SELECT id_member, fname, lname, city, profilepic, country FROM members where profilepic is not null ORDER BY RAND() limit 6";
 $req 		= 	mysql_query($requete) or die("pb sur requete ".$requete);
 

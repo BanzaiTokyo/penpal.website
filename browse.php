@@ -104,9 +104,7 @@
     {$selectedCountry="";}
 
 
-    //Préparation du menu dynamique
-    //-----------------------------
-    //-> On sélectionne toutes les pages de la table sitepages
+
     $requete    = "  SELECT regdate, id_member, fname, lname, city, profilepic, country
                 FROM members
                 where profilepic is not null
